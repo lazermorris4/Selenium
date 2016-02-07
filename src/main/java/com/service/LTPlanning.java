@@ -33,7 +33,6 @@ public class LTPlanning {
 			System.out.println(loginId);
 			js.executeScript("document.getElementById('userLoginId').setAttribute('value','"+loginId+"')");
 			//password=driver.findElement(By.id("userPassword"));
-			//password.sendKeys(pwd);
 			js.executeScript("document.getElementById('userPassword').setAttribute('value','"+pwd+"')");
 			driver.findElement(By.id("loginButton")).click();
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("A[href*='flightPlaning']")));
