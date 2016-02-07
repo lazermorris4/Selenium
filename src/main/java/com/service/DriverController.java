@@ -27,8 +27,10 @@ public class DriverController {
 		BrowserOpen browserOpen= new BrowserOpen();
 		
 		if (browserName.equalsIgnoreCase("Google Chrome")) {
+			ChromeOptions o = new ChromeOptions();
+			o.addArguments("disable-extensions");
 			System.setProperty("webdriver.chrome.driver","chromedriver.exe");
-			WebDriver driver = new ChromeDriver();
+			WebDriver driver = new ChromeDriver(o);
 			browserOpen.openChrome(url,driver);
 			status= validation.status(testId, testName, browserName, driver);
 			captureScreenshot.createFolder();
