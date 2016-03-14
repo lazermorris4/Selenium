@@ -105,7 +105,7 @@ table,td,th{
 
 <body>
 <h1>UI automation</h1>
-<p><select name="urldropdown" id="urldropdown0"><option value="https://www.bankofamerica.com/sitemap/state-select.go">Bank of America login</option><option value="https://intranet.stg.cargo.aa.com/LocationTracking/cargo/Outbound">American Airlines cargo</option><option value="https://www.yahoo.com">https://www.yahoo.com</option></select></p>
+<p><select name="urldropdown" id="urldropdown0"><option value="https://www.bankofamerica.com/sitemap/state-select.go">Bank of America login</option><option value="">American Airlines cargo</option><option value="https://www.yahoo.com">https://www.yahoo.com</option></select></p>
 <FORM name="myform" method="get">
 <table class="testcases">
 <tr>
